@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
 
        font-family: Roboto, sans-serif;
 }
 
 .header{
+    padding-top: 20px;
     display: flex;
     background-color: #1F2937;
     color: #f9faf8;
@@ -15,6 +22,7 @@ body{
 }
 
 .navbar{
+    font-size: large;
     display: flex;
     justify-content: end;
     list-style-type:none;
@@ -59,6 +67,8 @@ body{
     align-items: center;
     justify-content:space-around;
     padding-bottom:100px;
+       flex-wrap: wrap;      /* allow items to wrap to next line */
+    gap: 20px; 
 }
 
 .img{
@@ -67,7 +77,9 @@ body{
 }
 
 .section03{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 100px;
     background-color: #E5E7EB;
     font-size: 36px;
@@ -75,3 +87,86 @@ body{
     font-style: italic;
 }
 
+/* .section03{
+    text-align: center;
+    padding: 100px;
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+} */
+
+.section04{
+    display: flex;
+    justify-content: center;
+    
+}
+.banner2{
+
+    display: flex;
+    min-height: 100px;
+    justify-content: space-around;
+    background-color: royalblue;
+    margin-top: 60px;
+    width:700px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+    align-items: center;
+    
+
+}
+
+
+.button2 {
+  
+  margin-top: 15px;
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 8px;
+  background: royalblue;
+  color: white;
+  
+}
+
+button {
+    
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+button.continue {
+  background: royalblue;
+  border: 1px solid whitesmoke;
+  color: white;
+}
+
+
+.call{
+    color: #E5E7EB;
+    
+}
+
+.footer{
+    text-align: center;
+    color: #E5E7EB;
+    margin-top: 50px;
+    padding: 20px;
+  
+
+    background-color: #1F2937;
+}
+
+
+.item {
+    display: flex;
+    flex-direction: column;  /* Stack img and text vertically */
+    align-items: center;
+    max-width: 200px;        /* Limit item width to keep layout neat */
+    text-align: center;      /* Center text below image */
+}
+
+
+.text{
+    margin-top: 20px;
+}
